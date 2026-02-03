@@ -1,0 +1,142 @@
+/* Responsive Styles for Mobile and Tablet Devices */
+
+/* Tablet Devices (768px and below) */
+@media (max-width: 768px) {
+
+    /* Navbar adjustments */
+    .navbar-brand {
+        font-size: 1.5rem !important;
+    }
+
+    /* Display headings - reduce size on tablets */
+    .display-4 {
+        font-size: 2.5rem !important;
+    }
+
+    .display-5 {
+        font-size: 2rem !important;
+    }
+
+    /* Glass cards - adjust padding */
+    .glass-card {
+        padding: 1.5rem !important;
+    }
+
+    /* Profile images - smaller on tablets */
+    .profile-img {
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    /* Gallery items - adjust height */
+    .gallery-item img {
+        height: 250px !important;
+    }
+
+    /* Footer - reduce padding */
+    footer {
+        padding: 20px 0 !important;
+        margin-top: 30px !important;
+    }
+}
+
+/* Mobile Devices (576px and below) */
+@media (max-width: 576px) {
+
+    /* Navbar brand - even smaller */
+    .navbar-brand {
+        font-size: 1.2rem !important;
+    }
+
+    /* Display headings - smaller for mobile */
+    .display-4 {
+        font-size: 1.8rem !important;
+    }
+
+    .display-5 {
+        font-size: 1.5rem !important;
+    }
+
+    /* Lead text - reduce size */
+    .lead {
+        font-size: 1rem !important;
+    }
+
+    /* Glass cards - more compact */
+    .glass-card {
+        padding: 1rem !important;
+    }
+
+    /* Profile images - smallest size */
+    .profile-img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    /* Social icons - smaller */
+    .glass-icon {
+        width: 35px !important;
+        height: 35px !important;
+        font-size: 0.9rem !important;
+    }
+
+    /* Gallery items - single column, smaller height */
+    .gallery-item img {
+        height: 200px !important;
+    }
+
+    /* Feedback cards - adjust text */
+    .feedback-text {
+        font-size: 0.9rem !important;
+    }
+
+    /* Footer text - smaller */
+    footer p {
+        font-size: 0.85rem !important;
+    }
+
+    /* Icon sizes - reduce for mobile */
+    .display-3 {
+        font-size: 2.5rem !important;
+    }
+
+    /* Buttons - full width on mobile */
+    .btn {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    /* Search form - stack vertically */
+    .d-flex[role="search"] {
+        flex-direction: column !important;
+    }
+
+    .d-flex[role="search"] .form-control {
+        margin-bottom: 0.5rem;
+        margin-right: 0 !important;
+    }
+}
+
+/* Extra Small Devices (400px and below) */
+@media (max-width: 400px) {
+
+    /* Further reduce heading sizes */
+    .display-4 {
+        font-size: 1.5rem !important;
+    }
+
+    .display-5 {
+        font-size: 1.3rem !important;
+    }
+
+    /* Compact spacing */
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    /* Gallery - very compact */
+    .gallery-item img {
+        height: 180px !important;
+    }
+}
