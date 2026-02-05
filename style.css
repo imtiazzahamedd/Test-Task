@@ -22,6 +22,10 @@ main {
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
+.nav-item .nav-link.active {
+    color: #00d2ff!important;
+}
+
 .navbar-brand,
 .nav-link {
     color: var(--text-color) !important;
