@@ -7,13 +7,14 @@
     <title>Contact Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
                 <a class="navbar-brand fs-2" style="font-family: 'Londrina Shadow', system-ui;"
                     href="#">Glassmorphism</a>
@@ -44,7 +45,7 @@
     </header>
     <main>
         <!-- Contact Header -->
-        <section class="contact-header py-5 text-center">
+        <section class="contact-header py-5 text-center" data-aos="fade-up">
             <div class="container">
                 <h1 class="display-4 fw-bold">Get In Touch</h1>
                 <p class="lead">We'd love to hear from you. Let's create something amazing together!</p>
@@ -56,7 +57,7 @@
             <div class="container">
                 <div class="row g-4">
                     <!-- Contact Form -->
-                    <div class="col-lg-8">
+                    <div class="col-lg-8" data-aos="fade-up">
                         <div class="glass-card g-card p-4">
                             <h2 class="mb-4">Send Us a Message</h2>
                             <form onsubmit="send()">
@@ -68,8 +69,8 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label for="lastName" class="form-label">Last Name</label>
-                                        <input type="text" class="form-control" id="lastName" placeholder="Doe"
-                                            required minlength="1" maxlength="20">
+                                        <input type="text" class="form-control" id="lastName" placeholder="Doe" required
+                                            minlength="1" maxlength="20">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="email" class="form-label">Email Address</label>
@@ -78,8 +79,8 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label for="phone" class="form-label">Phone Number</label>
-                                        <input type="tel" class="form-control" id="phone"
-                                            placeholder="01700000000" pattern="[0-9]{11}" required>
+                                        <input type="tel" class="form-control" id="phone" placeholder="01700000000"
+                                            pattern="[0-9]{11}" required>
                                     </div>
                                     <div class="col-12">
                                         <label for="subject" class="form-label">Subject</label>
@@ -89,7 +90,8 @@
                                     <div class="col-12">
                                         <label for="message" class="form-label">Message</label>
                                         <textarea class="form-control" id="message" rows="5"
-                                            placeholder="Tell us about your project..." required minlength="1" maxlength="500"></textarea>
+                                            placeholder="Tell us about your project..." required minlength="1"
+                                            maxlength="500"></textarea>
                                     </div>
                                     <div class="col-12">
                                         <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
@@ -100,7 +102,7 @@
                     </div>
 
                     <!-- Contact Information -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="fade-up">
                         <div class="glass-card g-card p-4 mb-4">
                             <h3 class="mb-4">Contact Information</h3>
                             <div class="contact-info-item mb-4">
@@ -159,7 +161,7 @@
         </section>
 
         <!-- Google Map Section -->
-        <section class="map-section py-5 bg-light">
+        <section class="map-section py-5 bg-light" data-aos="zoom-in">
             <div class="container">
                 <h2 class="text-center mb-4">Find Us Here</h2>
                 <div class="map-container">
@@ -175,14 +177,14 @@
         <!-- FAQ Section -->
         <section class="faq-section py-5">
             <div class="container">
-                <div class="text-center mb-5">
+                <div class="text-center mb-5" data-aos="fade-up">
                     <h2 class="display-5 fw-bold">Frequently Asked Questions</h2>
                     <p class="lead">Got questions? We've got answers!</p>
                 </div>
 
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <div class="accordion" id="faqAccordion">
+                        <div class="accordion" id="faqAccordion" data-aos="fade-up" data-aos-delay="100">
                             <!-- FAQ 1 -->
                             <div class="accordion-item mb-3">
                                 <h2 class="accordion-header">
@@ -313,6 +315,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
 </body>
